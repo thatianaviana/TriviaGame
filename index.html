@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+
+
+    <!-- Start of the game -->
+    <div class="mainContent">
+        <div>
+            <h2 class="header"></h2>
+
+            <button class='btn btn-info' id="startGame">Click
+                Here To Start!</button>
+        </div>
+
+        <div id="gameOn" class="boxWrapper">
+
+            <!-- Timer countdown -->
+            <h4 id="timerStart">Time Remaining: <span id="timerCount">0</span></h4>
+
+            <!-- Questions -->
+
+            <form id="questions">
+
+                <h2>1 - What's Jerry/Terry/Garry's real name?</h2>
+
+                <input type="radio" name="q1" value="wrong">Larry Gengurch
+                <input type="radio" name="q1" value="wrong">Gerry Gergich
+                <input type="radio" name="q1" value="correct">Jerry Gingrich
+                <input type="radio" name="q1" value="wrong">Terry Gingrich
+
+                    <!-- need to add -->
+                <h2> 2 - What's Leslie's favorite food?</h2>
+
+                <input type="radio" name="q2" value="wrong">Pancakes
+                <input type="radio" name="q2" value="correct">Waffles
+                <input type="radio" name="q2" value="wrong">Eggs and Toast
+                <input type="radio" name="q2" value="wrong">French Toast
+
+
+
+                <h2> 3 - Which of the following is NOT a Tom Haverford business idea?</h2>
+
+                <input type="radio" name="q3" value="wrong">Disco Diary
+                <input type="radio" name="q3" value="wrong">Rent-a-Swag
+                <input type="radio" name="q3" value="wrong">VIP Department Store
+                <input type="radio" name="q3" value="correct">Skinny Dogs
+
+
+                <h2>4 - Who is Leslie's biggest crush?</h2>
+
+                <input type="radio" name="q4" value="correct">Joe Biden
+                <input type="radio" name="q4" value="wrong">Hillary Clinton
+                <input type="radio" name="q4" value="wrong">Barack Obama
+                <input type="radio" name="q4" value="wrong">Bill Clinton
+
+
+                <h2>5 - Who is Ron's saxophone-playing alter ego?</h2>
+
+                <input type="radio" name="q5" value="correct">Duke Silver
+                <input type="radio" name="q5" value="wrong">Sammy Tunes
+                <input type="radio" name="q5" value="wrong">Pablo Johnson
+                <input type="radio" name="q5" value="wrong"> Joe Dirt
+
+                <h2>6 - Who does April hate above all others?</h2>
+
+                <input type="radio" name="q6" value="wrong">Ben
+                <input type="radio" name="q6" value="correct">Ann
+                <input type="radio" name="q6" value="wrong">Chris
+                <input type="radio" name="q6" value="wrong">Ron
+
+
+                <h2>7 - What's the name of Pawnee's archrival town?</h2>
+
+                <input type="radio" name="q7" value="correct">Eagleton
+                <input type="radio" name="q7" value="wrong">Plainfield
+                <input type="radio" name="q7" value="wrong">Maplewood
+                <input type="radio" name="q7" value="wrong">Riverside
+
+                <h2>8 - What's the occupation of Ron's ex-wife Tammy Two?</h2>
+
+                <input type="radio" name="q8" value="wrong">Plumber
+                <input type="radio" name="q8" value="correct">Librarian
+                <input type="radio" name="q8" value="wrong">Preschool Teacher
+                <input type="radio" name="q8" value="wrong">State Senator
+    
+
+            </form>
+
+            <br>
+            <button class="'btn btn-warning" id=endGame>I'm Leslie Knope's #1 Fan</button>
+
+        </div>
+
+        <!-- tally for end of game -->
+        <div id=tally>
+            <h1 id="done">Results</h1>
+            <br>
+
+            <h3>Correct Answers: <span id="correctAsnwers">0</span></h3>
+            <h3>Incorrect Answers: <span id=wrongAnswers>0</span></h3>
+            <h3>Unanswered: <span id="unanswered">0</span></h3>
+            <br>
+
+            <button class="'btn btn-dark" id=restartGame> Click Here to Try Again!</button>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- script links for javascript and jquery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
